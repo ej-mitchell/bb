@@ -1,20 +1,28 @@
-# smol
+# bb
 
-A minimal, monospaced blogging theme for Hugo that respects your privacy and is easy on your bandwidth. A demo can be found at https://smol-demo.morph.sh.
+A minimal theme based off of [smol](https://github.com/colorchestra/smol). It
+remains to be seen whether or not I'll update this in any meaningful way, but
+wanted to have it logged somewhere, just in case.
 
-smol is based on [Blank](https://github.com/Vimux/Blank) created by [Vimux](https://github.com/Vimux).
+My goal is to keep the features the same because fuck Google and fuck
+JavaScript. People should be able to read any site they want regardless of their
+bandwidth.
 
+If you want to use my theme over `smol` replace all the references to `smol`
+with `bb` in the copied documentation below.
+
+## From smol
 
 ![Screenshot](/images/tn.png)
 
-## Features
+### Features
 
 - No JavaScript
 - No Google spyware or tracking of any kind
 - No other external dependencies, embedded fonts or comment sections
 - Dark mode support (depending on your OS's setting)
 
-## Installation
+### Installation
 
 In your Hugo site `themes` directory, run:
 
@@ -76,17 +84,17 @@ Lastly, add the following lines to your `config.toml` to set site parameters and
 
 For more information read the official [quick start guide](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
-## Optional features
-### Custom copyright text
+### Optional features
+#### Custom copyright text
 Add `copyright = "Your text here"` - in the config.toml to change the copyright notice in the footer.
 
-### Image captions
+#### Image captions
 You can add captions to images (technically using `<figcaption>` HTML tags) by adding titles, like so: `![Alt text here](/path/to/image.png "Put your caption here!")`
 
-## Contributing
+### Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/colorchestra/smol/issues) to let me know. Or make directly a [pull request](https://github.com/colorchestra/smol/pulls).
 
-## License
+### License
 
 This theme is released under the [MIT license](https://github.com/colorchestra/smol/blob/master/LICENSE).
