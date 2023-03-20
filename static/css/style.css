@@ -3,23 +3,13 @@ html {
 }
 
 :root {
-  --bgcolor: white;
-  --fontcolor: #444;
-  --linkcolor: #00e;
-  --precolor: #fff;
-  --prebgcolor: #000;
-  --hover-color: #FFCC00;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bgcolor: black;
-    --fontcolor: white;
-    --linkcolor: #5bf;
-    --precolor: #fff;
-    --prebgcolor: #383838;
-    --hover-color: #CCFF00;
-  }
+  --black: #092327;
+  --white: #FFFFFF;
+  --gray: #383838;
+  --red: #D84727;
+  --green: #85CB33;
+  --blue: #4A8FE7;
+  --yellow: #ECDD09;
 }
 
 body {
@@ -27,8 +17,8 @@ body {
   margin: 40px auto;
   padding: 0 10px;
   font: 14px/1.5 monospace;
-  color: var(--fontcolor);
-  background: var(--bgcolor);
+  color: var(--white);
+  background: var(--black);
 }
 
 a {
@@ -37,11 +27,15 @@ a {
 
 a:hover {
   padding: 1px;
-  background-color: var(--hover-color);
+  border: 1px solid var(--green);
 }
 
 a:link {
-  color: var(--linkcolor);
+  color: var(--red);
+}
+
+a:visited {
+  color: var(--red);
 }
 
 h1,
@@ -51,14 +45,14 @@ h3 {
 }
 
 p > code {
-  color: var(--precolor);
-  background: var(--prebgcolor);
+  color: var(--white);
+  background: var(--gray);
   padding: 2px;
 }
 
 pre {
-  color: var(--precolor);
-  background: var(--prebgcolor);
+  color: var(--white);
+  background: var(--gray);
   padding: 24px;
   overflow-x: auto;
 }
@@ -75,7 +69,7 @@ article {
 }
 
 figcaption {
-  color: #888;
+  color: var(--gray);
   font: 12px/1.5 monospace;
   text-align: center;
 }
@@ -89,4 +83,12 @@ img {
   max-width: 100%;
   height: auto;
   margin: auto;
+}
+
+.date-time {
+  color: var(--yellow);
+}
+
+.title {
+  font-size: 22px;
 }
