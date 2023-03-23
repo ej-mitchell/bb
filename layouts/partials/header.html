@@ -2,12 +2,12 @@
 	<a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a><br>
 	<div style="float: right;">{{ .Site.Params.subtitle }}</div><br>
 	<p>
-	<nav>
+		<nav>
 			~ || {{ with .Site.Menus.main }}
 			{{ range . }}
-			<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a> ||
+			<a class="nav-links" href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a> ||
 			{{ end }} ~
-	</nav>
+		</nav>
 	</p>
 	{{ end }}
 </header>

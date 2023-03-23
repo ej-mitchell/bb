@@ -23,19 +23,12 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--red);
 }
 
 a:hover {
   padding: 1px;
   border: 1px solid var(--green);
-}
-
-a:link {
-  color: var(--red);
-}
-
-a:visited {
-  color: var(--red);
 }
 
 h1,
@@ -85,8 +78,29 @@ img {
   margin: auto;
 }
 
+.article-title {
+  font-size: 30px;
+  color: var(--green);
+}
+
 .date-time {
   color: var(--yellow);
+}
+
+.footer-links {
+  color: var(--yellow);
+}
+
+.nav-links {
+  color: var(--blue);
+}
+
+.pagination-link {
+  color: var(--blue);
+}
+
+.read-more {
+  color: var(--blue);
 }
 
 .title {
