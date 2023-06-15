@@ -1,7 +1,10 @@
 <footer>
-	<p>&copy; {{ now.Year }} <a class="footer-links" href="{{ .Site.BaseURL }}"><b>{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{ .Site.Title }}{{ end }}</b></a>.
-	{{- range .Site.Menus.footer }}
-	<a rel="me" class="footer-links" href="{{ .URL }}"><b>{{ .Name }}</b></a>.
-        {{- end }}
-	</p>
+	<div>
+		<a class="footer-links" href="https://github.com/ej-mitchell" target="_blank" rel="noopener">
+			<i class="fa-brands fa-github-alt" style="font-size: 30px;"></i>
+		</a>
+		<a class="footer-links" href="https://webring.xxiivv.com/#eejum" target="_blank" rel="noopener">
+			<img src="https://webring.xxiivv.com/icon.white.svg" style="color: #ecdd09;" alt="XXIIVV webring"/>
+		</a>
+	</div>
 </footer>
